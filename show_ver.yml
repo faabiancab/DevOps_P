@@ -8,3 +8,7 @@
     ios_command:
       commands: show version
       wait_for: result[0] contains IOS
+      
+      
+      
+      
