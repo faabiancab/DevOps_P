@@ -1,7 +1,11 @@
 ---
 
-task: 
-- name: run show version on remote devices
+- name: show run
+  connection: network cli
+  gather_facs: false
+  hosts: all
+  task:
+    - name: run show version on remote devices
     ios_command:
       commands: show version
 
