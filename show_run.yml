@@ -10,9 +10,5 @@
           commands:
              - show run
        register: config
-     - name: guardar salida show run
-       copy:
-          content: "{{ config.stdout[0] }}"
-	   dest: "/home/show_run_{{ inventory_hostname }}.txt"
 	  
 	  
