@@ -4,7 +4,7 @@
 - hosts: all
 
   tasks:
-  - name: find disk space available.
+  - name: run show version on remote devices
     ios_command:
     commands: show version
     
